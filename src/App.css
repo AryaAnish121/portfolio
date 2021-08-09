@@ -1,38 +1,295 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.none {
+  display: none !important;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.home {
+  position: relative;
+  height: 100vh;
+  width: 100%;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.home .circle-pattern {
+  position: absolute;
+  top: 25%;
+  left: 7.5%;
+  width: 285px;
+  height: 159px;
+  object-fit: cover;
+  opacity: 0.3;
+}
+.home .circle {
+  position: absolute;
+  width: 94px;
+  height: 99px;
+}
+.home .triangle-pattern {
+  right: 0;
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  opacity: 0.08;
+  object-fit: cover;
+}
+.home-content {
+  position: absolute;
+  top: 50%;
+  left: 12.5%;
+  transform: translateY(-50%);
+}
+.home-content h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: #666666;
+  font-size: 51px;
+  margin-bottom: 17.5px;
+  position: relative;
+}
+.home-content h1::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 20%;
+  height: 3px;
+  background: #5f5fff;
+}
+.home-content p {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 17px;
+  width: 36rem;
+  margin-bottom: 17.5px;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.4;
+  font-weight: 400;
+}
+.home-content p a {
+  text-decoration: none;
+  color: #1dbade;
+  padding: 0 5px;
+  font-weight: 500;
+}
+.home-content button {
+  background: #dacaff;
+  border-radius: 4px;
+  padding: 1px;
+  font-family: 'Roboto', sans-serif;
+  background: #dacaff;
+  color: #f1edfc;
+  padding: 8.5px 13.5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.tech {
+  margin-bottom: 17.5px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-around;
+  width: 225px;
+  padding: 5px 0;
 }
-
-.App-link {
-  color: #61dafb;
+.tech-img {
+  width: 40px;
+  height: 40px;
+  opacity: 0.3;
+  object-fit: cover;
+  transition: 0.3s ease;
+  cursor: pointer;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.tech-img:hover {
+  opacity: 0.7;
+}
+@media screen and (max-width: 768px) {
+  .triangle-pattern {
+    display: none;
   }
-  to {
-    transform: rotate(360deg);
+  .home-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    left: 0;
+    padding: 0 2rem;
+  }
+  .home-content h1 {
+    text-align: center;
+  }
+  .home-content p {
+    position: relative;
+    text-align: center;
+    width: fit-content;
+  }
+  .home .circle-pattern {
+    top: 19%;
+    left: 5%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .home-content h1 {
+    font-size: 35px;
+  }
+  .home-content h1::after {
+    display: none;
+  }
+}
+.contact {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+.contact .circle-pattern {
+  position: absolute;
+  top: 20%;
+  right: 7.5%;
+  width: 131px;
+  height: 91px;
+  object-fit: cover;
+  opacity: 0.3;
+}
+.contact .circle-pattern-2 {
+  position: absolute;
+  bottom: 15%;
+  right: 15%;
+  width: 88px;
+  height: 69px;
+  object-fit: cover;
+  opacity: 0.3;
+}
+.contact .triangle-pattern {
+  position: absolute;
+  top: 20%;
+  left: 7.5%;
+  width: 180px;
+  height: 215px;
+  object-fit: cover;
+  opacity: 0.05;
+}
+.contact-content {
+  position: absolute;
+  top: 50%;
+  left: 12.5%;
+  transform: translateY(-50%);
+}
+.contact-content h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: #666666;
+  font-size: 40px;
+  margin-bottom: 36px;
+}
+.contact-input {
+  background: rgba(247, 247, 247, 0.83);
+  border-radius: 2px;
+  margin-bottom: 18px;
+  position: relative;
+  width: 400px;
+  height: 55px;
+  overflow: hidden;
+}
+.contact-input.message {
+  width: 650px;
+  height: 200px;
+}
+.contact-input svg {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+  width: 19px;
+  height: 19px;
+  fill: #828282;
+}
+.contact-input.message svg {
+  top: 20%;
+  left: 3.5%;
+}
+.contact-input textarea {
+  width: 100%;
+  height: 105%;
+  border: none;
+  background: transparent;
+  outline: none;
+  padding: 30px 25px;
+  font-family: 'Roboto', sans-serif;
+}
+.contact-content textarea::placeholder {
+  position: absolute;
+  top: 18.5%;
+  left: 8%;
+  transform: translateY(-50%);
+  font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+}
+.contact-input input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #828282;
+  padding: 0 20px;
+  font-family: 'Roboto', sans-serif;
+}
+.contact-input input::placeholder {
+  color: #828282;
+  position: absolute;
+  left: 12.5%;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+}
+.contact-input.message input::placeholder {
+  left: 8.5%;
+  top: 20%;
+}
+.contact-content button {
+  background: #87c4df;
+  outline: none;
+  border: none;
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+  padding: 15px 22.5px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+@media screen and (max-width: 850px) {
+  .contact-content {
+    left: 0%;
+    padding: 0 3.5rem;
+    position: relative;
+  }
+  .contact-input {
+    width: 100%;
+  }
+  .contact-input.message {
+    width: 100%;
+  }
+  .contact-input svg {
+    left: 15px;
+  }
+  .contact-input.message svg {
+    left: 15px;
+  }
+  .contact-input input::placeholder {
+    left: 45px;
+  }
+  .contact-input textarea::placeholder {
+    left: 45px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .contact-content {
+    padding: 0 2rem;
+  }
+  .contact-content h1 {
+    font-size: 35px;
+    margin-bottom: 30px;
   }
 }
