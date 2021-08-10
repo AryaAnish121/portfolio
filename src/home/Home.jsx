@@ -2,9 +2,14 @@ import React from 'react';
 import CirclePattern from '../images/circle-pattern.png';
 import TrianglePattern from '../images/triangle-pattern.png';
 import ExpressLogo from '../images/expressjs.png';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 
 const Home = () => {
+  const history = useHistory();
+
+  const handleClick = () => {
+    history.push('/contact');
+  };
   return (
     <div className="home">
       <img src={CirclePattern} alt="pattern" className="circle-pattern" />
@@ -24,22 +29,21 @@ const Home = () => {
           <img
             src="https://cdn.worldvectorlogo.com/logos/mongodb-icon-1.svg"
             alt="mongodb"
-            className="mongodb tech-img"
+            className="tech-img"
           />
-          <img src={ExpressLogo} alt="express" className="express tech-img" />
+          <img src={ExpressLogo} alt="express" className="tech-img" />
           <img
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1024px-React-icon.svg.png"
             alt="react"
-            className="react tech-img"
+            className="tech-img"
           />
           <img
             src="https://cdn.iconscout.com/icon/free/png-512/node-js-1174925.png"
             alt="node.js"
-            className="nodejs tech-img"
+            className="tech-img"
           />
         </div>
-
-        <button>Contact Me</button>
+        <button onClick={handleClick}>Contact Me</button>
       </div>
     </div>
   );
