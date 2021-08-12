@@ -20,6 +20,9 @@
   align-items: center;
   width: 100%;
 }
+.logo-parent {
+  text-decoration: none;
+}
 .nav-logo {
   font-family: 'Autographicfont';
   color: #666666;
