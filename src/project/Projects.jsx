@@ -15,7 +15,7 @@ const Projects = () => {
             className="project-card"
           >
             <img
-              src="https://bit.ly/2VFT1me"
+              src="https://i.ibb.co/H4zWMCH/amazon.png"
               className="amazon-clone-logo project-card-image"
               alt="amazon-logo"
             />
@@ -26,7 +26,7 @@ const Projects = () => {
             className="project-card"
           >
             <img
-              src="https://bit.ly/3xw4l1x"
+              src="https://i.ibb.co/268bd5J/youtube-logo.png"
               className="youtube-bot-logo project-card-image"
               alt="youtube-logo"
             />
@@ -37,7 +37,7 @@ const Projects = () => {
             className="project-card last-project-card"
           >
             <img
-              src="https://bit.ly/3sfUrAt"
+              src="https://i.ibb.co/1KhjTfh/docs.png"
               className="google-docs-logo project-card-image"
               alt="google-docs-logo"
             />
