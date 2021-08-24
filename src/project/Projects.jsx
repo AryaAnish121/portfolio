@@ -1,10 +1,22 @@
 import React from 'react';
 import CirclePattern from '../images/circle-pattern.png';
 import TrianglePattern from '../images/triangle-pattern.png';
+import { Helmet } from 'react-helmet';
 
 const Projects = () => {
   return (
     <div className="projects">
+      <Helmet>
+        <title>AryaAnish121: Projects</title>
+        <meta
+          name="description"
+          content="These are Arya Anish's projects. Have a look"
+        />
+        <meta
+          name="keywords"
+          content="AryaAnish121, Arya Anish, Projects, Arya Anish Projects"
+        />
+      </Helmet>
       <img src={CirclePattern} alt="pattern" className="circle-pattern" />
       <img src={TrianglePattern} alt="pattern" className="triangle-pattern" />
       <div className="project-content">

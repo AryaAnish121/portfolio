@@ -4,6 +4,7 @@ import TrianglePattern from '../images/triangle-pattern.png';
 import PersonIcon from '@material-ui/icons/Person';
 import AlternateEmailIcon from '@material-ui/icons/AlternateEmail';
 import MessageIcon from '@material-ui/icons/Message';
+import { Helmet } from 'react-helmet';
 
 const Contact = () => {
   const [data, setData] = useState({
@@ -55,6 +56,17 @@ const Contact = () => {
 
   return (
     <div className="contact">
+      <Helmet>
+        <title>AryaAnish121: Contact</title>
+        <meta
+          name="description"
+          content="This is Arya Anish's contact form. Have a look"
+        />
+        <meta
+          name="keywords"
+          content="AryaAnish121, Arya Anish, Contact, Arya Anish Contact"
+        />
+      </Helmet>
       <img src={CirclePattern} alt="pattern" className="circle-pattern" />
       <img src={CirclePattern} alt="pattern" className="circle-pattern-2" />
       <img src={TrianglePattern} alt="pattern" className="triangle-pattern" />

@@ -3,6 +3,7 @@ import CirclePattern from '../images/circle-pattern.png';
 import TrianglePattern from '../images/triangle-pattern.png';
 import ExpressLogo from '../images/expressjs.png';
 import { Link, useHistory } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 
 const Home = () => {
   const history = useHistory();
@@ -12,6 +13,14 @@ const Home = () => {
   };
   return (
     <div className="home">
+      <Helmet>
+        <title>AryaAnish121</title>
+        <meta
+          name="description"
+          content="This is Arya Anish's Portfolio. Have a look"
+        />
+        <meta name="keywords" content="AryaAnish121, Arya Anish" />
+      </Helmet>
       <img src={CirclePattern} alt="pattern" className="circle-pattern" />
       <img src={TrianglePattern} alt="pattern" className="triangle-pattern" />
       <div className="home-content">
