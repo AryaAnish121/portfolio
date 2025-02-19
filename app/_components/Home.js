@@ -29,9 +29,7 @@ const Home = () => {
           Software Engineer
         </span>
       </h2>
-      {/* <div className="w-[500px] h-[500px] absolute top-[calc(50%-250px)] left-[calc(50%-250px)] rounded-full z-[-1] opacity-[40%] bg-customGradient blur-[62px]" /> */}
-      <div className="w-[500px] h-[500px] absolute top-[calc(50%-350px)] left-[calc(50%-650px)] rounded-full z-[-1] opacity-[30%] bg-customGradient blur-[62px]" />
-      <div className="w-[500px] h-[500px] absolute bottom-[calc(50%-350px)] right-[calc(50%-650px)] rounded-full z-[-1] opacity-[30%] bg-customGradient blur-[62px]" />
+      <div className="w-[500px] h-[500px] absolute bottom-[calc(50%-250px)] right-[calc(50%-250px)] rounded-full z-[-1] opacity-[20%] bg-customGradient blur-[62px]" />
     </div>
   );
 };

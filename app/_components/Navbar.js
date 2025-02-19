@@ -8,21 +8,21 @@ const Navbar = () => {
     <div className="w-full h-[110px] flex justify-center items-center absolute z-[2]">
       <ul className="flex">
         <li
-          className={`mr-[120px] text-[#121311] text-[24px] ${dmSerif.className}`}
+          className={`mr-[98px] text-[#121311] text-[21px] ${dmSerif.className}`}
         >
           <Link href="#home">home</Link>
         </li>
         <li
-          className={`mr-[120px] text-[#121311] text-[24px] ${dmSerif.className}`}
+          className={`mr-[98px] text-[#121311] text-[21px] ${dmSerif.className}`}
         >
           <Link href="#projects">projects</Link>
         </li>
         <li
-          className={`mr-[120px] text-[#121311] text-[24px] ${dmSerif.className}`}
+          className={`mr-[98px] text-[#121311] text-[21px] ${dmSerif.className}`}
         >
           <Link href="#about">about</Link>
         </li>
-        <li className={`text-[24px] text-[#121311]  ${dmSerif.className}`}>
+        <li className={`text-[22px] text-[#121311]  ${dmSerif.className}`}>
           <Link href="#contact">contact</Link>
         </li>
       </ul>

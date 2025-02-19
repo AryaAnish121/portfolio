@@ -9,7 +9,7 @@ export default {
     extend: {
       backgroundImage: {
         customGradient:
-          "linear-gradient(45deg, hsla(139, 11%, 28%, 1) 0%, hsla(27, 28%, 50%, 1) 100%)",
+          "linear-gradient(45deg, rgb(87, 64, 82) 0%, rgb(177, 72, 72) 100%)",
       },
     },
   },
