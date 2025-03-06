@@ -7,7 +7,7 @@ const averia = Averia_Serif_Libre({ subsets: ["latin"], weight: "400" });
 const LandingPage = () => {
   return (
     <div className="h-dvh w-[100%] flex">
-      <div className="h-full w-[50%] flex items-center justify-center">
+      <div className="h-full w-[50%] flex items-center justify-center pl-[150px]">
         <div>
           <h2
             className={`mb-[30px] text-[#CBD4D9] text-[120px] ${bricolage.className} leading-[100px] pb-[22px]`}
@@ -22,7 +22,7 @@ const LandingPage = () => {
           </p>
         </div>
       </div>
-      <div className="h-full w-[50%] flex items-center justify-center">
+      <div className="h-full w-[50%] flex items-center justify-center pr-[150px]">
         <div className="h-[380px] w-[380px] relative overflow-visible">
           <Box
             alt="node"
